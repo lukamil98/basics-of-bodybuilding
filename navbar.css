@@ -1,0 +1,60 @@
+
+
+.navbar{
+    background-color:#f3f3f3;
+    overflow: hidden;
+    height:63px;
+    text-align: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index:9999;
+}
+
+.navbar-slide a{
+    float:left;
+    display:block;
+    color:#000000;
+    text-align:center;
+    padding:10px 16px;
+    text-decoration:none;
+}
+
+#logo{
+    margin-top:-5px;
+}
+
+
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:9999;
+    top:0;
+    left:0;
+    background-color:rgb(195, 195, 195);
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.2s;
+}
+
+.side-nav a{
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#000;
+    text-transform: uppercase;
+    display:block;
+    transition:0.3s;
+
+}
+
+.side-nav a:hover{
+    background-color: #9c9c9c;
+}
+
+.side-nav .btn-close{
+    position: absolute;
+    top:0;
+    font-size:36px;
+}

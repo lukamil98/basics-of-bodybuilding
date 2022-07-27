@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <!-- JS -->
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>Calorie Calculator</title>
+
+    <style>
+      #loading, #results {
+        display: none;
+      }
+      #loading {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+      
+  <nav class="navbar">
+    <div class="navbar-slide">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+          <path d="M0,5 30,5" stroke="#000"
+          stroke-width="5"/>
+          <path d="M0,14 30,14" stroke="#000"
+          stroke-width="5"/>
+          <path d="M0,23 30,23" stroke="#000"
+          stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+  </div>
+    <a href="index.html">
+        <img src ="images/logo2-modified.png" id="logo" alt="logo"
+            height="50"
+            width="50">
+    </a>
+      </nav>
+  </nav>
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+      <a href="principles.html">Training Principles</a>
+      <a href="workouts.html">Workout Programs</a>
+      <a href="nutrition.html">Nutrition</a>
+      <a href="caloriecalc.html">Calorie Calculator</a>
+      <a href="about.html">About The Author</a>
+  </div>
+
+  
+  </div>
+  <h1 class="current-page-title">CALORIE CALCULATOR</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <div class="card card-body text-center mt-5">
+            <h1 class="heading display-5 pb-3">Calorie Calculator</h1>
+            <form id="calorie-form">
+
+              <div class="form-group row">
+                <label for="age" class="col-sm-2 col-form-label">Age</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="age" placeholder="Ages 15-80">
+                </div>
+              </div>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                  <div class="col-sm-10" id="form-radio">
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="male" name="customRadioInline1" class="custom-control-input" checked="checked">
+                      <label class="custom-control-label" for="male">Male</label>
+                    </div>
+                    <div class="custom-control custom-radio custom-control-inline">
+                      <input type="radio" id="female" name="customRadioInline1" class="custom-control-input">
+                      <label class="custom-control-label" for="female">Female</label>
+                    </div>  
+                  </div>
+                </div> 
+              </fieldset> 
+
+              <div class="form-group row">
+                <label for="weight" class="col-sm-2 col-form-label">Weight</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="weight" placeholder="In kilograms">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label for="height" class="col-sm-2 col-form-label">Height</label>
+                <div class="col-sm-10">
+                  <input type="number" class="form-control" id="height" placeholder="In centimeters">
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <legend class="col-form-label col-sm-2 pt-0">Activity</legend>
+                <select class="custom-select col-sm-10" id="list">
+                  <option selected value="1">Sedentary (little or no exercise)</option>
+                  <option value="2">Lightly active (light exercise/sports 1-3 days/week)</option>
+                  <option value="3">Moderately active (moderate exercise/sports 3-5 days/week)</option>
+                  <option value="4">Very active (hard exercise/sports 6-7 days a week)</option>
+                  <option value="5">Extra active (very hard exercise/sports & physical job or 2x training)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <input type="submit" value="Calculate" class="btn btn-dark btn-block">
+              </div>
+
+            </form>
+
+            <div id="loading">
+              <img src="./images/Loading.gif" alt="">
+            </div>
+
+            <div id="results" class="pt-4">
+              <h5>Total Calories</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="number" class="form-control" id="total-calories" disabled>
+                </div>
+              </div>                       
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="js/caloriecalc.js"></script>
+  </body>
+</html>

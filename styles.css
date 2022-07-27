@@ -1,0 +1,104 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.main-content {
+  margin: 5% 20% 10% 20%;
+  padding-bottom: 40px;
+}
+
+.more-info {
+  font-size: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px 0 10px 0;
+}
+
+.current-page-title {
+  font-size: 4.5em;
+  color: #e4e4e4;
+  text-align: center;
+  margin-top: 70px;
+}
+
+p {
+  font-weight: bold;
+  text-align: justify;
+}
+
+
+
+#arnold2 {
+  float: left;
+  margin: 15px;
+}
+
+#arnold3 {
+  float: right;
+  margin: 15px;
+}
+
+#mentzer1 {
+  float: right;
+  margin: 15px;
+}
+
+#mentzer2 {
+  float: left;
+  margin: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: justify;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 700px) {
+  #arnold2,
+  #arnold3,
+  #mentzer1,
+  #mentzer2,
+  #me1,
+  #me2 {
+    width: 100%;
+    margin: 0;
+    float: none;
+    z-index: 0;
+  }
+
+  h1{
+      font-size: 1.3rem;
+      justify-content: center;
+  }
+
+  .current-page-title{
+      font-size: 3em;
+  }
+
+  .main-page-title{
+    font-size: 1.3em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  h1 {
+    font-size: 1.1em;
+  }
+
+  h3 {
+    font-size:1em;
+  }
+}
